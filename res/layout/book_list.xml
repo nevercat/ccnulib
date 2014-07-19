@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_listitem_shot"
+    android:padding="8dip" >
+
+    <TextView
+        android:id="@+id/bookTitleTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#3F83AA" />
+
+    <TextView
+        android:id="@+id/barcode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/bookTitleTV"
+        android:layout_below="@id/bookTitleTV"
+        android:text="@string/barcode"
+        android:textColor="#7E7E7E" />
+
+    <TextView
+        android:id="@+id/barcodeTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bookTitleTV"
+        android:layout_marginLeft="30dp"
+        android:layout_toRightOf="@id/barcode"
+        android:textColor="#7E7E7E" />
+
+    <TextView
+        android:id="@+id/borrowedDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/barcode"
+        android:layout_below="@id/barcodeTV"
+        android:text="@string/borrowedDate"
+        android:textColor="#7E7E7E" />
+
+    <TextView
+        android:id="@+id/borrowedDateTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/barcodeTV"
+        android:layout_below="@id/barcodeTV"
+        android:textColor="#7E7E7E" />
+
+    <TextView
+        android:id="@+id/paybackDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/borrowedDate"
+        android:layout_below="@id/borrowedDateTV"
+        android:text="@string/paybackDate"
+        android:textColor="#7E7E7E" />
+
+    <TextView
+        android:id="@+id/paybackDateTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/borrowedDateTV"
+        android:layout_below="@id/borrowedDateTV"
+        android:textColor="#7E7E7E" />
+
+    <TextView
+        android:id="@+id/renewAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/paybackDate"
+        android:layout_below="@id/paybackDateTV"
+        android:text="@string/renewAmount"
+        android:textColor="#7E7E7E" />
+
+    <TextView
+        android:id="@+id/renewAmountTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/paybackDateTV"
+        android:layout_below="@id/paybackDateTV"
+        android:textColor="#7E7E7E" />
+
+    <TextView
+        android:id="@+id/collectionAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/renewAmount"
+        android:layout_below="@id/renewAmountTV"
+        android:text="@string/collectionAddress"
+        android:textColor="#7E7E7E" />
+
+    <TextView
+        android:id="@+id/collectionAddressTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/renewAmountTV"
+        android:layout_below="@id/renewAmountTV"
+        android:textColor="#7E7E7E" />
+
+    <TextView
+        android:id="@+id/attachment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/collectionAddress"
+        android:layout_below="@id/collectionAddressTV"
+        android:text="@string/attachment"
+        android:textColor="#7E7E7E" />
+
+    <TextView
+        android:id="@+id/attachmentTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/collectionAddressTV"
+        android:layout_below="@id/collectionAddressTV"
+        android:textColor="#7E7E7E" />
+
+    <Button
+        android:id="@+id/renewButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/bookTitleTV"
+        android:layout_marginRight="14dp"
+        android:focusable="false"
+        android:text="续借"
+        android:textColor="#7E7E7E"
+        android:visibility="invisible" />
+
+</RelativeLayout>

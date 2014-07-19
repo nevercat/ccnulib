@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="c_ff2c2c2e">#ff2c2c2e</color>
+    <color name="transparent">#00000000</color>
+    <color name="sliding_menu_item_pressed">#ff39393b</color>
+    <color name="sliding_menu_back">#ff2c2c2e</color>
+    <color name="c_ff999999">#ff999999</color>
+    <color name="c_ffffffff">#ffffffff</color>
+    <color name="c_ffb1b1b1">#ffb1b1b1</color>
+    <color name="white">#ffffffff</color>
+    <color name="c_f5f5f5">#fff5f5f5</color>
+    <color name="red">#ffde3131</color>
+    <color name="c_ff949494">#ff949494</color>
+    <color name="c_ff2f2f2f">#ff2f2f2f</color>
+    <color name="black">#ff000000</color>
+    <color name="c_ff000000">#ff000000</color>
+    <color name="c_ff8c8c8c">#ff8c8c8c</color>
+    <color name="c_ffc4c4c4">#ffc4c4c4</color>
+    <color name="c_ff4d4e49">#ff4d4e49</color>
+    <color name="main_gray_bg">#ffececec</color>
+    <color name="opaque_red">#3F83AA</color>
+    <color name="c_ffcacaca">#ffcacaca</color>
+    <color name="c_ffe9e9e9">#ffe9e9e9</color>
+    <color name="c_ffababab">#ffababab</color>
+
+</resources>

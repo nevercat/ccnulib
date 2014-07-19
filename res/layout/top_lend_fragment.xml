@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ccnulib="http://schemas.android.com/apk/res/com.wangwenfeng.ccnulib"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg"
+    android:clickable="true"
+    android:orientation="vertical" >
+
+    <com.wangwenfeng.ccnulib.ui.common.LibActionBar
+        android:id="@+id/action_bar"
+        ccnulib:style="title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        ccnulib:icon="@drawable/side_bar_icon_top_lend"
+        ccnulib:title="@string/top_lend" >
+    </com.wangwenfeng.ccnulib.ui.common.LibActionBar>
+
+    <ListView
+        android:id="@+id/top_lend_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="5dip"
+        android:drawSelectorOnTop="true"
+        android:footerDividersEnabled="true"
+        android:headerDividersEnabled="true"
+        android:paddingLeft="5dip"
+        android:paddingRight="5dip"
+        android:scrollbarStyle="outsideOverlay"
+        android:scrollingCache="true"
+        android:smoothScrollbar="true" >
+    </ListView>
+
+</LinearLayout>

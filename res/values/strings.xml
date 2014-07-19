@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">华大图书馆</string>
+    <string name="dialog_title">提示</string>
+    <string name="dialog_exit">您真的要退出？</string>
+    <string name="exit">退出</string>
+    <string name="cancel">取消</string>
+    <string name="search_simple">简单检索</string>
+    <string name="search_adv">全文检索</string>
+    <string name="search_more">多字段检索</string>
+    <string name="reader_info">证件信息</string>
+    <string name="book_list">当前借阅</string>
+    <string name="book_hist">借阅历史</string>
+    <string name="top_lend">热门借阅</string>
+    <string name="top_score">热门评分</string>
+    <string name="top_shelf">热门收藏</string>
+    <string name="top_book">热门图书</string>
+    <string name="about">关于</string>
+    <string name="find_password_new">忘记密码</string>
+    <string name="enter_id">请输入用户名</string>
+    <string name="enter_password">请输入密码</string>
+    <string name="login">登录</string>
+    <string name="please_enter_your_id_add">请输入您的证件号</string>
+    <string name="find_password_directions">如果您在个人资料里填写了正确的电子邮箱，我们会将您的密码发送到您的邮箱中。如果您没有填写电子邮箱，请联系图书馆工作人员。</string>
+    <string name="reset_password">重置密码</string>
+    <string name="recd">记住密码</string>
+    <string name="barcode">条码号：</string>
+    <string name="borrowedDate">借阅日期：</string>
+    <string name="paybackDate">应还日期：</string>
+    <string name="renewAmount">续借量：</string>
+    <string name="collectionAddress">馆藏地：</string>
+    <string name="attachment">附件：</string>
+    <string name="verson">for&#160;Android&#160;版本:&#160;1.0.0</string>
+    <string name="visit_app_website">访问作者网站</string>
+    <string name="visit_app_weibo">访问作者微博</string>
+    <string name="customer_service_hotline">作者QQ&#160;363681021</string>
+    <string name="customer_service_mail">作者邮箱&#160;wwf@mails.ccnu.edu.cn</string>
+    <string name="copyright_string">华中师范大学&#160;&#160;版权所有</string>
+    <string name="company_name">http://www.wangwenfeng.com</string>
+
+</resources>

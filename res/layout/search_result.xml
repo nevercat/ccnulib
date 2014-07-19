@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_listitem_shot"
+    android:padding="8dip" >
+
+    <TextView
+        android:id="@+id/searchBookNoTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#3F83AA" />
+
+    <TextView
+        android:id="@+id/searchBookTitleTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/searchBookNoTV"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#3F83AA" />
+
+    <TextView
+        android:id="@+id/searchCallNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/searchBookNoTV"
+        android:layout_below="@id/searchBookTitleTV"
+        android:text="索书号："
+        android:textColor="#7E7E7E" />
+
+    <TextView
+        android:id="@+id/searchAuthor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/searchCallNo"
+        android:layout_below="@id/searchCallNo"
+        android:text="责任者："
+        android:textColor="#7E7E7E" />
+
+    <TextView
+        android:id="@+id/searchPublisher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/searchAuthor"
+        android:layout_below="@id/searchAuthor"
+        android:text="出版社："
+        android:textColor="#7E7E7E" />
+
+    <TextView
+        android:id="@+id/searchType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/searchPublisher"
+        android:layout_below="@id/searchPublisher"
+        android:text="文献类型："
+        android:textColor="#7E7E7E" />
+
+    <!-- <TextView
+        android:id="@+id/searchCollectionCopy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/searchType"
+        android:layout_below="@id/searchType"
+        android:text="馆藏副本："
+        android:textColor="#7E7E7E" />
+
+    <TextView
+        android:id="@+id/searchCanBorrowCopy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/searchCollectionCopy"
+        android:layout_below="@id/searchCollectionCopy"
+        android:text="可借副本："
+        android:textColor="#7E7E7E" /> -->
+
+    <TextView
+        android:id="@+id/searchCallNoTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/searchBookTitleTV"
+        android:layout_marginLeft="30dp"
+        android:layout_toRightOf="@id/searchCallNo"
+        android:textColor="#7E7E7E" />
+
+    <TextView
+        android:id="@+id/searchAuthorTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/searchCallNoTV"
+        android:layout_below="@id/searchCallNoTV"
+        android:textColor="#7E7E7E" />
+
+    <TextView
+        android:id="@+id/searchPublisherTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/searchAuthorTV"
+        android:layout_below="@id/searchAuthorTV"
+        android:textColor="#7E7E7E" />
+
+    <TextView
+        android:id="@+id/searchTypeTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/searchPublisherTV"
+        android:layout_below="@id/searchPublisherTV"
+        android:textColor="#7E7E7E" />
+
+    <!--
+    <TextView
+        android:id="@+id/searchCollectionCopyTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/searchTypeTV"
+        android:layout_below="@id/searchTypeTV"
+        android:textColor="#7E7E7E" />
+
+    <TextView
+        android:id="@+id/searchCanBorrowCopyTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/searchCollectionCopyTV"
+        android:layout_below="@id/searchCollectionCopyTV"
+        android:textColor="#7E7E7E" />
+    -->
+
+</RelativeLayout>

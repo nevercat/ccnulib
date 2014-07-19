@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_listitem_shot"
+    android:padding="8dip" >
+
+    <TextView
+        android:id="@+id/topLendNumTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#3F83AA" />
+
+    <TextView
+        android:id="@+id/topLendBookTitleTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/topLendNumTV"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#3F83AA" />
+
+    <TextView
+        android:id="@+id/topLendAuthor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/topLendNumTV"
+        android:layout_below="@id/topLendBookTitleTV"
+        android:text="责任者："
+        android:textColor="#7E7E7E" />
+
+    <TextView
+        android:id="@+id/topLendAuthorTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/topLendBookTitleTV"
+        android:layout_marginLeft="30dp"
+        android:layout_toRightOf="@id/topLendAuthor"
+        android:textColor="#7E7E7E" />
+
+    <TextView
+        android:id="@+id/topLendPublish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/topLendAuthor"
+        android:layout_below="@id/topLendAuthorTV"
+        android:text="出版信息："
+        android:textColor="#7E7E7E" />
+
+    <TextView
+        android:id="@+id/topLendPublishTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/topLendAuthorTV"
+        android:layout_below="@id/topLendAuthorTV"
+        android:textColor="#7E7E7E" />
+
+    <TextView
+        android:id="@+id/topLendCallNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/topLendPublish"
+        android:layout_below="@id/topLendPublishTV"
+        android:text="索书号："
+        android:textColor="#7E7E7E" />
+
+    <TextView
+        android:id="@+id/topLendCallNumTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/topLendPublishTV"
+        android:layout_below="@id/topLendPublishTV"
+        android:textColor="#7E7E7E" />
+
+    <TextView
+        android:id="@+id/topLendColl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/topLendCallNum"
+        android:layout_below="@id/topLendCallNumTV"
+        android:text="馆藏："
+        android:textColor="#7E7E7E" />
+
+    <TextView
+        android:id="@+id/topLendCollTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/topLendCallNumTV"
+        android:layout_below="@id/topLendCallNumTV"
+        android:textColor="#7E7E7E" />
+
+    <TextView
+        android:id="@+id/topLendBorrowAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/topLendColl"
+        android:layout_below="@id/topLendCollTV"
+        android:text="借阅册次："
+        android:textColor="#7E7E7E" />
+
+    <TextView
+        android:id="@+id/topLendBorrowAmountTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/topLendCollTV"
+        android:layout_below="@id/topLendCollTV"
+        android:textColor="#7E7E7E" />
+
+    <TextView
+        android:id="@+id/topLendProportion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/topLendBorrowAmount"
+        android:layout_below="@id/topLendBorrowAmountTV"
+        android:text="借阅比："
+        android:textColor="#7E7E7E" />
+
+    <TextView
+        android:id="@+id/topLendProportionTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/topLendBorrowAmountTV"
+        android:layout_below="@id/topLendBorrowAmountTV"
+        android:textColor="#7E7E7E" />
+
+</RelativeLayout>

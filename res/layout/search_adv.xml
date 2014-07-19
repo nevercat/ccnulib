@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ccnulib="http://schemas.android.com/apk/res/com.wangwenfeng.ccnulib"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/c_f5f5f5"
+    android:clickable="true"
+    android:orientation="vertical" >
+
+    <com.wangwenfeng.ccnulib.ui.common.LibActionBar
+        android:id="@+id/action_bar"
+        ccnulib:style="title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        ccnulib:icon="@drawable/side_bar_icon_search_adv"
+        ccnulib:title="@string/search_adv" >
+    </com.wangwenfeng.ccnulib.ui.common.LibActionBar>
+
+</LinearLayout>

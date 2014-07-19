@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ccnulib="http://schemas.android.com/apk/res/com.wangwenfeng.ccnulib"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg"
+    android:clickable="true"
+    android:orientation="vertical" >
+
+    <com.wangwenfeng.ccnulib.ui.common.LibActionBar
+        android:id="@+id/action_bar"
+        ccnulib:style="title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        ccnulib:icon="@drawable/side_bar_icon_search_simple"
+        ccnulib:title="@string/search_simple" >
+    </com.wangwenfeng.ccnulib.ui.common.LibActionBar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/main_gray_bg"
+        android:focusableInTouchMode="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0" >
+
+            <EditText
+                android:id="@+id/search_box"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_vertical_margin"
+                android:hint="请输入检索关键词" />
+
+            <Button
+                android:id="@+id/search_clear_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="30.0dip"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:background="#00000000"
+                android:paddingRight="5.0dip"
+                android:src="@drawable/search_clear_btn"
+                android:visibility="invisible" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/search"
+            android:layout_width="40.0dip"
+            android:layout_height="40.0dip"
+            android:layout_margin="5.0dip"
+            android:background="@drawable/top_search_selector" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/search_section_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="5dip"
+        android:drawSelectorOnTop="true"
+        android:footerDividersEnabled="true"
+        android:headerDividersEnabled="true"
+        android:paddingLeft="5dip"
+        android:paddingRight="5dip"
+        android:scrollbarStyle="outsideOverlay"
+        android:scrollingCache="true"
+        android:smoothScrollbar="true" >
+    </ListView>
+
+    <include layout="@layout/foot_search" />
+
+</LinearLayout>

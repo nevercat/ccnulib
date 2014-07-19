@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ccnulib="http://schemas.android.com/apk/res/com.wangwenfeng.ccnulib"
+    android:id="@+id/login_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/c_ff2f2f2f"
+    android:clickable="true"
+    android:orientation="vertical" >
+
+    <com.wangwenfeng.ccnulib.ui.common.LibActionBar
+        android:id="@+id/action_bar"
+        ccnulib:style="title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        ccnulib:icon="@drawable/side_bar_icon_top_book"
+        ccnulib:title="@string/login" >
+    </com.wangwenfeng.ccnulib.ui.common.LibActionBar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:paddingTop="100dip"
+                android:src="@drawable/head" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <AutoCompleteTextView
+                android:id="@+id/account"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="15dip"
+                android:layout_marginLeft="25dip"
+                android:layout_marginRight="25dip"
+                android:layout_marginTop="45dip"
+                android:background="@drawable/login_input_drw"
+                android:completionThreshold="1"
+                android:ellipsize="end"
+                android:hint="@string/enter_id"
+                android:imeOptions="actionNext"
+                android:inputType="textEmailAddress"
+                android:singleLine="true"
+                android:textColor="@color/c_ffffffff"
+                android:textColorHint="@color/c_ff949494"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="15dip"
+                android:layout_marginLeft="25dip"
+                android:layout_marginRight="25dip"
+                android:layout_marginTop="15dip"
+                android:background="@drawable/login_input_drw"
+                android:ellipsize="end"
+                android:hint="@string/enter_password"
+                android:imeOptions="actionDone"
+                android:inputType="textPassword"
+                android:singleLine="true"
+                android:textColor="@color/c_ffffffff"
+                android:textColorHint="@color/c_ff949494"
+                android:textSize="15sp" />
+
+            <CheckBox
+                android:id="@+id/recd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="23dp"
+                android:text="@string/recd"
+                android:textColor="@color/c_ff949494" />
+
+            <Button
+                android:id="@+id/login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dip"
+                android:layout_marginLeft="25dip"
+                android:layout_marginRight="25dip"
+                android:background="@drawable/regitser_ok_bg"
+                android:enabled="false"
+                android:text="@string/login"
+                android:textColor="@color/disable_gray_normal_black_pressed_white"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/findpassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="100dip"
+                android:text="@string/find_password_new"
+                android:textColor="@color/c_ff949494" />
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

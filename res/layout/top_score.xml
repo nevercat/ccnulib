@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_listitem_shot"
+    android:padding="8dip" >
+
+    <TextView
+        android:id="@+id/topScoreNumTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#3F83AA" />
+
+    <TextView
+        android:id="@+id/topScoreBookTitleTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/topScoreNumTV"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#3F83AA" />
+
+    <TextView
+        android:id="@+id/topScoreAuthor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/topScoreNumTV"
+        android:layout_below="@id/topScoreBookTitleTV"
+        android:text="责任者："
+        android:textColor="#7E7E7E" />
+
+    <TextView
+        android:id="@+id/topScoreAuthorTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/topScoreBookTitleTV"
+        android:layout_marginLeft="30dp"
+        android:layout_toRightOf="@id/topScoreAuthor"
+        android:textColor="#7E7E7E" />
+
+    <TextView
+        android:id="@+id/topScorePublish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/topScoreAuthor"
+        android:layout_below="@id/topScoreAuthorTV"
+        android:text="出版信息："
+        android:textColor="#7E7E7E" />
+
+    <TextView
+        android:id="@+id/topScorePublishTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/topScoreAuthorTV"
+        android:layout_below="@id/topScoreAuthorTV"
+        android:textColor="#7E7E7E" />
+
+    <TextView
+        android:id="@+id/topScoreCallNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/topScorePublish"
+        android:layout_below="@id/topScorePublishTV"
+        android:text="索书号："
+        android:textColor="#7E7E7E" />
+
+    <TextView
+        android:id="@+id/topScoreCallNumTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/topScorePublishTV"
+        android:layout_below="@id/topScorePublishTV"
+        android:textColor="#7E7E7E" />
+
+    <TextView
+        android:id="@+id/topScoreAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/topScoreCallNum"
+        android:layout_below="@id/topScoreCallNumTV"
+        android:text="评价人次："
+        android:textColor="#7E7E7E" />
+
+    <TextView
+        android:id="@+id/topScoreAmountTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/topScoreCallNumTV"
+        android:layout_below="@id/topScoreCallNumTV"
+        android:textColor="#7E7E7E" />
+
+</RelativeLayout>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_listitem_shot"
+    android:padding="8dip" >
+
+    <TextView
+        android:id="@+id/topShelfNumTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#3F83AA" />
+
+    <TextView
+        android:id="@+id/topShelfBookTitleTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/topShelfNumTV"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#3F83AA" />
+
+    <TextView
+        android:id="@+id/topShelfAuthor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/topShelfNumTV"
+        android:layout_below="@id/topShelfBookTitleTV"
+        android:text="责任者："
+        android:textColor="#7E7E7E" />
+
+    <TextView
+        android:id="@+id/topShelfAuthorTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/topShelfBookTitleTV"
+        android:layout_marginLeft="30dp"
+        android:layout_toRightOf="@id/topShelfAuthor"
+        android:textColor="#7E7E7E" />
+
+    <TextView
+        android:id="@+id/topShelfPublish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/topShelfAuthor"
+        android:layout_below="@id/topShelfAuthorTV"
+        android:text="出版信息："
+        android:textColor="#7E7E7E" />
+
+    <TextView
+        android:id="@+id/topShelfPublishTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/topShelfAuthorTV"
+        android:layout_below="@id/topShelfAuthorTV"
+        android:textColor="#7E7E7E" />
+
+    <TextView
+        android:id="@+id/topShelfCallNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/topShelfPublish"
+        android:layout_below="@id/topShelfPublishTV"
+        android:text="索书号："
+        android:textColor="#7E7E7E" />
+
+    <TextView
+        android:id="@+id/topShelfCallNumTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/topShelfPublishTV"
+        android:layout_below="@id/topShelfPublishTV"
+        android:textColor="#7E7E7E" />
+
+    <TextView
+        android:id="@+id/topShelfAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/topShelfCallNum"
+        android:layout_below="@id/topShelfCallNumTV"
+        android:text="收藏人次："
+        android:textColor="#7E7E7E" />
+
+    <TextView
+        android:id="@+id/topShelfAmountTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/topShelfCallNumTV"
+        android:layout_below="@id/topShelfCallNumTV"
+        android:textColor="#7E7E7E" />
+
+</RelativeLayout>

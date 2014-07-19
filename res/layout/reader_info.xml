@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ccnulib="http://schemas.android.com/apk/res/com.wangwenfeng.ccnulib"
+    android:id="@+id/reader_info_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg"
+    android:clickable="true"
+    android:orientation="vertical" >
+
+    <com.wangwenfeng.ccnulib.ui.common.LibActionBar
+        android:id="@+id/action_bar"
+        ccnulib:style="title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        ccnulib:icon="@drawable/side_bar_icon_reader_info"
+        ccnulib:title="@string/reader_info" >
+    </com.wangwenfeng.ccnulib.ui.common.LibActionBar>
+
+    <RelativeLayout
+        android:id="@+id/information"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/bg_listitem_shot"
+        android:padding="8dp" >
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="姓名："
+            android:textColor="#3F83AA"
+            android:textSize="16.0sp" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/nameText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="78dip"
+            android:layout_toRightOf="@id/name"
+            android:textColor="#7E7E7E"
+            android:textSize="16.0sp" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/sex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/name"
+            android:layout_below="@id/nameText"
+            android:text="性别："
+            android:textColor="#3F83AA"
+            android:textSize="16.0sp" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/sexText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/nameText"
+            android:layout_below="@id/nameText"
+            android:textColor="#7E7E7E"
+            android:textSize="16.0sp" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/sex"
+            android:layout_below="@id/sexText"
+            android:text="证件号："
+            android:textColor="#3F83AA"
+            android:textSize="16.0dp" />
+
+        <TextView
+            android:id="@+id/numberText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/sexText"
+            android:layout_below="@id/sexText"
+            android:textColor="#7E7E7E"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/barNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/number"
+            android:layout_below="@id/numberText"
+            android:text="条码号："
+            android:textColor="#3F83AA"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/barNumberText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/numberText"
+            android:layout_below="@id/numberText"
+            android:textColor="#7E7E7E"
+            android:textSize="16dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/bg_listitem_shot"
+        android:padding="8dp" >
+
+        <TextView
+            android:id="@+id/certificateDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="办证日期："
+            android:textColor="#3F83AA"
+            android:textSize="16.0sp" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/certificateDateText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="46dip"
+            android:layout_toRightOf="@id/certificateDate"
+            android:textColor="#7E7E7E"
+            android:textSize="16.0sp" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/effectiveDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/certificateDate"
+            android:layout_below="@id/certificateDateText"
+            android:text="生效日期："
+            android:textColor="#3F83AA"
+            android:textSize="16.0sp" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/effectiveDateText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/certificateDateText"
+            android:layout_below="@id/certificateDateText"
+            android:textColor="#7E7E7E"
+            android:textSize="16.0sp" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/expireData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/effectiveDate"
+            android:layout_below="@id/effectiveDateText"
+            android:text="失效日期："
+            android:textColor="#3F83AA"
+            android:textSize="16.0sp" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/expireDataText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/effectiveDateText"
+            android:layout_below="@id/effectiveDateText"
+            android:textColor="#7E7E7E"
+            android:textSize="16.0sp" >
+        </TextView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/borrow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/bg_listitem_shot"
+        android:padding="8dp" >
+
+        <TextView
+            android:id="@+id/readerType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="读者类型："
+            android:textColor="#3F83AA"
+            android:textSize="16.0sp" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/readerTypeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="46dip"
+            android:layout_toRightOf="@id/readerType"
+            android:textColor="#7E7E7E"
+            android:textSize="16.0sp" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/grade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/readerType"
+            android:layout_below="@id/readerTypeText"
+            android:text="借阅等级："
+            android:textColor="#3F83AA"
+            android:textSize="16.0sp" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/gradeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/readerTypeText"
+            android:layout_below="@id/readerTypeText"
+            android:textColor="#7E7E7E"
+            android:textSize="16.0sp" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/maxBorrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/grade"
+            android:layout_below="@id/gradeText"
+            android:text="最大可借图书："
+            android:textColor="#3F83AA"
+            android:textSize="16.0sp" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/maxBorrowText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/gradeText"
+            android:layout_below="@id/gradeText"
+            android:textColor="#7E7E7E"
+            android:textSize="16.0sp" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/sumBorrowed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/maxBorrow"
+            android:layout_below="@id/maxBorrowText"
+            android:text="累计借书："
+            android:textColor="#3F83AA"
+            android:textSize="16.0sp" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/sumBorrowedText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/maxBorrowText"
+            android:layout_below="@id/maxBorrowText"
+            android:textColor="#7E7E7E"
+            android:textSize="16.0sp" >
+        </TextView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/other"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/bg_listitem_shot"
+        android:padding="8dp" >
+
+        <TextView
+            android:id="@+id/workPlace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="工作单位："
+            android:textColor="#3F83AA"
+            android:textSize="16.0sp" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/workPlaceText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="46dip"
+            android:layout_toRightOf="@id/workPlace"
+            android:textColor="#7E7E7E"
+            android:textSize="16.0sp" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/position"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/workPlace"
+            android:layout_below="@id/workPlaceText"
+            android:text="职位："
+            android:textColor="#3F83AA"
+            android:textSize="16.0sp" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/positionText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/workPlaceText"
+            android:layout_below="@id/workPlaceText"
+            android:textColor="#7E7E7E"
+            android:textSize="16.0sp" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/idNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/position"
+            android:layout_below="@id/positionText"
+            android:text="身份证号："
+            android:textColor="#3F83AA"
+            android:textSize="16.0sp" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/idNumberText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/positionText"
+            android:layout_below="@id/positionText"
+            android:textColor="#7E7E7E"
+            android:textSize="16.0sp" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/tel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/idNumber"
+            android:layout_below="@id/idNumberText"
+            android:text="手机："
+            android:textColor="#3F83AA"
+            android:textSize="16.0sp" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/telText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/idNumberText"
+            android:layout_below="@id/idNumberText"
+            android:textColor="#7E7E7E"
+            android:textSize="16.0sp" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/tel"
+            android:layout_below="@id/telText"
+            android:text="E-mail："
+            android:textColor="#3F83AA"
+            android:textSize="16.0sp" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/emailText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/telText"
+            android:layout_below="@id/telText"
+            android:textColor="#7E7E7E"
+            android:textSize="16.0sp" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/zipCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/email"
+            android:layout_below="@id/emailText"
+            android:text="邮编："
+            android:textColor="#3F83AA"
+            android:textSize="16.0sp" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/zipCodeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/emailText"
+            android:layout_below="@id/emailText"
+            android:textColor="#7E7E7E"
+            android:textSize="16.0sp" >
+        </TextView>
+    </RelativeLayout>
+
+</LinearLayout>

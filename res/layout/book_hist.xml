@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_listitem_shot"
+    android:padding="8dip" >
+
+    <TextView
+        android:id="@+id/histBookNoTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#3F83AA" />
+
+    <TextView
+        android:id="@+id/histBookTitleTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/histBookNoTV"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#3F83AA" />
+
+    <TextView
+        android:id="@+id/histBarCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/histBookNoTV"
+        android:layout_below="@id/histBookTitleTV"
+        android:text="条码号："
+        android:textColor="#7E7E7E" />
+
+    <TextView
+        android:id="@+id/histBarCodeTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/histBookTitleTV"
+        android:layout_marginLeft="30dp"
+        android:layout_toRightOf="@id/histBarCode"
+        android:textColor="#7E7E7E" />
+
+    <TextView
+        android:id="@+id/histAuthor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/histBarCode"
+        android:layout_below="@id/histBarCodeTV"
+        android:text="责任者："
+        android:textColor="#7E7E7E" />
+
+    <TextView
+        android:id="@+id/histAuthorTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/histBarCodeTV"
+        android:layout_below="@id/histBarCodeTV"
+        android:textColor="#7E7E7E" />
+
+    <TextView
+        android:id="@+id/histBorrowTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/histAuthor"
+        android:layout_below="@id/histAuthorTV"
+        android:text="借阅日期："
+        android:textColor="#7E7E7E" />
+
+    <TextView
+        android:id="@+id/histBorrowTimeTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/histAuthorTV"
+        android:layout_below="@id/histAuthorTV"
+        android:textColor="#7E7E7E" />
+
+    <TextView
+        android:id="@+id/histReturnTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/histBorrowTime"
+        android:layout_below="@id/histBorrowTimeTV"
+        android:text="归还日期："
+        android:textColor="#7E7E7E" />
+
+    <TextView
+        android:id="@+id/histReturnTimeTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/histBorrowTimeTV"
+        android:layout_below="@id/histBorrowTimeTV"
+        android:textColor="#7E7E7E" />
+
+    <TextView
+        android:id="@+id/histCollAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/histReturnTime"
+        android:layout_below="@id/histReturnTimeTV"
+        android:text="馆藏地："
+        android:textColor="#7E7E7E" />
+
+    <TextView
+        android:id="@+id/histCollAddressTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/histReturnTimeTV"
+        android:layout_below="@id/histReturnTimeTV"
+        android:textColor="#7E7E7E" />
+
+</RelativeLayout>

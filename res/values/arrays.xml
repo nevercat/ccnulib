@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="menu_group_list">
+        <item>图书检索</item>
+        <item>我的图书馆</item>
+        <item>热门推荐</item>
+        <item>其他</item>
+    </string-array>
+    <string-array name="menu_child_list">
+        <item>书目检索</item>
+        <item>证件信息</item>
+        <item>当前借阅</item>
+        <item>借阅历史</item>
+        <item>热门借阅</item>
+        <item>热门评分</item>
+        <item>热门收藏</item>
+        <item>热门图书</item>
+        <item>关于</item>
+        <item>退出</item>
+    </string-array>
+    <string-array name="weibo_name">
+        <item>新浪微博</item>
+    </string-array>
+    
+
+</resources>
